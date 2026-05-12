@@ -118,7 +118,7 @@ CineGeek busca crear una experiencia inmersiva para cinéfilos y fanáticos de l
 # 📂 Estructura del proyecto
 
 ```bash
-CineGeek/
+PlataformaCine/
 │
 ├── assets/
 ├── css/
@@ -136,7 +136,7 @@ CineGeek/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/your-user/CineGeek.git
+git clone https://github.com/isairey/PlataformaCine.git
 ```
 
 ---
@@ -144,7 +144,7 @@ git clone https://github.com/your-user/CineGeek.git
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd CineGeek
+cd PlataformaCine
 ```
 
 ---
@@ -293,7 +293,7 @@ contact@cinegeek.com
 
 <div align="center">
 
-## Alan_Cyril
+## Isai Reyes
 
 Desarrollador enfocado en plataformas multimedia modernas y experiencias cinematográficas web.
 
