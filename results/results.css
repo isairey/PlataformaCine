@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .item h2 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    .item {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  .tmdb-rating {
+    position: absolute;
+    margin-top: -1px;
+    color: #ffc107; /* Yellow color for stars */
+    font-size: 0.6rem; /* Font size of stars */
+    background-color: rgba(0, 0, 0, 0.579);
+    width: fit-content;
+    border-radius: 1.2rem;
+    font-weight: bolder;
+  }
+
+
+  .item {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .item:hover {
+    transform: scale(1.05);
+  }

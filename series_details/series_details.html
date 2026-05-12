@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theatre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../movie_details/movie_details.css" rel="stylesheet">  
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+
+
+<body>
+
+  <div  class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">CineGeek</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input id="searchInput" type="text" placeholder="Search..." onkeydown="if (event.keyCode === 13) searchSeries()">
+         <span class="tooltip">Search</span>
+      </li>
+
+      <li>
+        <a href="../index.html">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+
+
+      <li>
+        <a href=#>
+          <i class='bx bx-party' ></i>
+          <span class="links_name">Watchparty</span>
+        </a>
+         <span class="tooltip">Party</span>
+      </li>
+
+      
+
+      
+
+     
+
+    </ul>
+  </div>
+
+  <main>
+    <center>
+    <div id="videoPlayer" style="background-color: rgb(3, 16, 27);color: black;overflow: hidden;  ">
+      <center>
+        <iframe id="seriesIframe" src="" width="80%" style="margin-bottom: -5px;overflow: hidden;" frameborder="0" allowfullscreen></iframe>
+      </center>
+      </div>
+
+    <div id="buttons">
+        <button id="Trailerbtn" class="btn">Trailer</button>
+
+        <button id="Server1Btn" class="btn" >Server 1</button>
+
+        <button id="Server2Btn" class="btn">Server 2</button>
+
+        <button id="Server3Btn" class="btn">Server 3</button>
+        
+        
+        <!-- Add more buttons for additional embeds -->
+    </div>
+
+
+    <br><br>
+    <form action="/action_page.php">
+      <!-- <label for="seriesinfo">Choose:</label> -->
+  
+      <select name="Season No" id="Sno">
+        <!-- <option value="season">Season</option> -->
+      </select>
+  
+      <select name="Episode No" id="epNo">
+        <!-- <option value="episode">Episode</option> -->
+      </select>
+
+    </form>
+
+
+    <div class="markdown-div" style="padding-top: 5%;">
+      <pre style="background-color: rgb(3, 16, 27);"><code>
+   - Use a Adblocker for better experience.
+   - Server 3 is the default server.  If it fails to load or connect, use Server 1 or 2.
+   - Repress the server if it doesn't start playing after waiting.
+   - Don't press the buttons continuosly.
+   - If you get redirected to some other site , then close it & come back.
+   -Enjoy✨😇
+  </code></pre>
+  </div>
+
+  
+  <br><br>
+    <div id="seriesDetails" class="container">
+        <h1 >Series Details</h1>
+        <img id="poster" src="" alt="Serie Poster" style="width: 60vw;">
+      
+        <h2 id="title"></h2>
+        <div id="desc">
+        <p id="description"></p>
+        </div>
+   
+        <br><br>
+        <h3>Cast:</h3>
+        <div id="castList" ></div>  
+</div>
+</center>
+
+</main>
+
+    
+<script src="series_details.js" type="text/javascript"></script>
+
+</body>
+</html>
